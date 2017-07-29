@@ -39,7 +39,7 @@ class App:
             else:
                 self.driver.speed = 0
             
-            print 'speed={}, direction={}'.format(self.driver.speed, self.driver.direction)
+            #print 'speed={}, direction={}'.format(self.driver.speed, self.driver.direction)
 
 
 

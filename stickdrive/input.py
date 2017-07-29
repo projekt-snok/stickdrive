@@ -10,6 +10,7 @@ except ImportError:
 
 
 CONTROLLER_NAME='Sony Computer Entertainment Wireless Controller'
+#CONTROLLER_NAME='Sony PLAYSTATION(R)3 Controller'
 
 class SixAxisResource:
     """
