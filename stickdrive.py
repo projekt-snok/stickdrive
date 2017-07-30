@@ -32,12 +32,12 @@ class App:
             yValue = joystick.axes[1].corrected_value() #left stick Y-axis
             xValue = joystick.axes[2].corrected_value() #right stick X-axis
             
-            self.driver.direction = int(round(254 * xValue))
+            self.driver.direction = int(round(xValue * 1000)) #helps with integer calculations
             
-            if yValue > 0:
-                self.driver.speed = int(round(yValue * 254))
-            else:
-                self.driver.speed = 0
+            #if yValue > 0:
+            self.driver.speed = int(round(yValue * 1000)) #ready formated speed
+            #else:
+            #    self.driver.speed = 0
             
             #print 'speed={}, direction={}'.format(self.driver.speed, self.driver.direction)
 
